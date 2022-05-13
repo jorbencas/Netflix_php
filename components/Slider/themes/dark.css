@@ -1,0 +1,19 @@
+.tarjeta {
+    background: var(--main-grey);
+}
+
+.slider_banner .banner .anime .first .titulo{
+	-webkit-box-shadow: 0 -6px 16px 10px var(--main-grey);
+	-moz-box-shadow: 0 -6px 16px 10px var(--main-grey);
+	box-shadow: 0 -6px 16px 10px var(--main-grey);
+    background-color: var(--main-grey);
+    color: var(--color-text);
+}
+
+.slider_banner .flecha-banner {
+    color:var(--opacity-green);
+}
+
+.slider_banner .flecha-banner:hover {
+	color: var(--main-green);
+}

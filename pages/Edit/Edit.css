@@ -1,0 +1,444 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-green);
+  background-color: var(--opacity-grey);
+}
+
+.tab {
+  overflow: hidden;
+  margin-left: 39px;
+  margin-right: 39px;
+}
+
+.tab .tablink,
+.tab .tablinks {
+  background-color: var(--opacity-grey);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: var(--color-text);
+  transition: all 0.3s ease;
+}
+
+.tab .tablink i,
+.tab .tablinks i {
+  color: var(--main-green);
+}
+
+.tab .tablink:hover,
+.tab .tablinks:hover {
+  background-color: var(--opacity-grey);
+  color: var(--color-text);
+}
+
+.tab .tablink *,
+.tab .tablinks * {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.tab .tablink.active,
+.tab .tablinks.active {
+  background: var(--main-green) !important;
+  color: var(--color-text) !important;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 75px;
+  background-color: var(--main-grey);
+  margin: 5px 40px;
+}
+
+.steps .content p {
+  color: var(--color-text);
+  font-size: 12px;
+}
+
+.steps .step {
+  display: flex;
+  align-items: center;
+}
+
+.steps .step div {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin: 0 8px;
+  padding: 5px 5px;
+  transition: all 0.4s;
+}
+
+.steps span {
+  border: 1px solid var(--main-green);
+  border-radius: 50%;
+  z-index: 1;
+  color: var(--color-text);
+  font-size: 22px;
+  padding: 2px 10px;
+  transition: all 0.4s;
+}
+
+.steps .active div,
+.steps .active span {
+  border: 1px solid var(--main-green);
+  background-color: var(--main-green);
+}
+
+.steps .active p {
+  color: var(--main-green);
+}
+
+.tabcontent {
+  display: none;
+  padding: 0px 39px;
+  margin-right: 0;
+  width: auto;
+  overflow: hidden;
+}
+
+.tabcontent .list {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  width: 100%;
+  /*max-width: 1873px;*/
+  overflow: auto;
+  background-color: var(--main-grey);
+}
+
+.tabcontent .list > .child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  width: 205px;
+  height: 0px;
+}
+
+.tabcontent .list_element {
+  position: absolute;
+  background-color: black;
+  margin: -61px;
+  height: 71px;
+  width: 71px;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.tabcontent .list_element:nth-child(odd) {
+  top: 0 !important;
+}
+
+.tabcontent .list_element:nth-child(even) {
+  bottom: 0 !important;
+}
+
+.tabcontent .list_element .img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transform: rotate(-45deg) scale(1.4);
+}
+
+.tabcontent .list_element:hover .info {
+  display: block;
+}
+
+.tabcontent .list_element:hover .img {
+  opacity: 0.6;
+}
+
+.tabcontent .list_element .info {
+  display: none;
+  overflow: hidden;
+  margin: auto;
+  white-space: nowrap;
+  font-size: 25px;
+  font-family: "Roboto-Black";
+  color: var(--opacity-green);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+.all .link {
+  display: inline-block;
+  margin: 22px;
+  font-size: 18px;
+  width: 45%;
+  padding: 10px;
+}
+
+.all .link {
+  background: var(--main-green);
+  border: 2px solid var(--color-text);
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: "Roboto";
+  max-width: 235px;
+  text-align: center;
+}
+
+.all .link:hover {
+  border: 2px solid var(--main-green);
+  background: var(--opacity-grey);
+  color: var(--color-text);
+}
+
+.tabcontent .wrap {
+  overflow: hidden;
+  transition: height 0.4s;
+}
+
+.form_oculto {
+  display: none;
+}
+
+.wrap {
+  display: block;
+  color: var(--main-green);
+  background-color: var(--main-grey);
+}
+
+input {
+  display: inline-block;
+  border: 1px solid var(--main-green);
+  background: var(--opacity-grey);
+  margin: 22px;
+  color: var(--main-green);
+  font-family: "Roboto";
+  font-size: 18px;
+  width: 45%;
+  padding: 10px;
+}
+
+.siglas {
+  width: 25%;
+}
+
+.contenedor-formulario .formulario .input-group {
+  margin: 12px;
+  text-align: center;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox,
+.contenedor-formulario .formulario .input-group.radio {
+  text-align: left;
+}
+
+.concret {
+  display: block;
+  margin: 22px;
+  text-align: left;
+}
+
+.concret input {
+  width: -webkit-fill-available;
+  max-width: 100%;
+}
+
+.contenedor-formulario .formulario .link {
+  display: inline-block;
+  margin: 22px;
+  font-size: 18px;
+  width: 45%;
+  padding: 10px;
+}
+
+.contenedor-formulario .formulario .submit,
+.contenedor-formulario .formulario .link {
+  background: var(--main-green);
+  border: 2px solid var(--color-text);
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: "Roboto";
+  max-width: 235px;
+  text-align: center;
+}
+
+.contenedor-formulario .formulario .submit:hover {
+  border: 2px solid var(--main-green);
+  background: var(--opacity-grey);
+  color: var(--color-text);
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label,
+.contenedor-formulario .formulario .input-group.radio label {
+  display: inline-block;
+  cursor: pointer;
+  color: var(--main-green);
+  position: relative;
+  padding: 5px 15px 5px 51px;
+  font-size: 1em;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label:hover,
+.contenedor-formulario .formulario .input-group.radio label:hover {
+  background: var(--opacity-green);
+  color: var(--color-text);
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label:before,
+.contenedor-formulario .formulario .input-group.radio label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 15px;
+  border-radius: 50%;
+  background: none;
+  border: 2px solid var(--main-green);
+}
+
+.contenedor-formulario .formulario .input-group.radio input[type="radio"] {
+  display: none;
+}
+
+.contenedor-formulario
+  .formulario
+  .input-group.radio
+  input[type="radio"]:checked
+  + label:before {
+  display: none;
+}
+
+.contenedor-formulario
+  .formulario
+  .input-group.radio
+  input[type="radio"]:checked
+  + label {
+  padding: 5px 15px;
+  background: var(--main-green);
+  border-radius: 2px;
+  color: var(--color-text);
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label:before {
+  border-radius: 3px;
+}
+.contenedor-formulario
+  .formulario
+  .input-group.checkbox
+  input[type="checkbox"] {
+  display: none;
+}
+.contenedor-formulario
+  .formulario
+  .input-group.checkbox
+  input[type="checkbox"]:checked
+  + label:before {
+  display: none;
+}
+.contenedor-formulario
+  .formulario
+  .input-group.checkbox
+  input[type="checkbox"]:checked
+  + label {
+  background: var(--main-green);
+  color: var(--color-text);
+  padding: 5px 15px;
+}
+
+.star-rating {
+  font-size: 13px;
+  display: inline-block;
+}
+
+.star-rating span .fas {
+  color: var(--main-green);
+}
+
+.star-rating span .far {
+  color: var(--main-green);
+}
+
+.movil_list {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .movil_list {
+    display: block;
+    width: 100%;
+    height: 175px;
+    position: relative;
+    overflow: auto;
+    color: var(--main-green);
+    background-color: var(--main-grey);
+  }
+
+  .movil_list .movil_child {
+    width: 65%;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .contenedor-formulario {
+    padding: 10px;
+    max-width: 100%;
+    border-width: 0px;
+    /* max-width: 1873px; */
+    width: 100%;
+  }
+
+  .contenedor-formulario .formulario {
+    width: 90%;
+  }
+
+  .contenedor-formulario .formulario .input-group {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .contenedor-formulario .formulario input {
+    width: 100%;
+  }
+
+  .contenedor-formulario .formulario .concret {
+    width: 91%;
+    margin: 22px;
+  }
+
+  .contenedor-formulario .formulario .concret input {
+    width: 100%;
+  }
+
+  .contenedor-formulario .formulario .input-group.checkbox,
+  .contenedor-formulario .formulario .input-group.radio {
+    margin: 0px;
+    width: 100%;
+  }
+}

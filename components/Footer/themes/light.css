@@ -1,0 +1,37 @@
+footer {
+  background: var(--main-grey);
+  border-top-color: var(--main-green);
+  color: var(--color-text);
+}
+
+footer .footer-list .element_container {
+  color: var(--color-text);
+  background: var(--main-green);
+}
+
+footer .footer-list .element_container .element_text {
+  background-color: var(--main-green);
+  color: var(--color-text);
+}
+
+footer .footer-logo .logo {
+  color: var(--color-text);
+}
+
+footer .footer-logo .contador li:hover {
+  background-color: transparent;
+}
+
+footer .footer-logo .contador li i {
+  color: var(--color-text);
+  background-color: linear-gradient(
+    to bottom,
+    #ffffff,
+    var(--main-green)
+  ) !important;
+}
+
+footer .footer-logo .sidenav .element * {
+  display: block;
+  color: var(--color-text);
+}

@@ -1,0 +1,17 @@
+.error, .error .link {
+    color: var(--color-text);
+  }
+
+  .error .container{
+    background-color: var(--opacity-grey);
+  }
+  
+  .error .text {
+    background-color: var(--opacity-green);
+    color: var(--color-text);
+  }
+
+  .error .link:hover {
+    color: var(--main-green);
+  }
+  

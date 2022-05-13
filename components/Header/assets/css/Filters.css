@@ -1,0 +1,58 @@
+.filters .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.filters .menu  li{
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.filters .list li {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.filters .link {
+    padding: 13px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.filters .list .link{
+    height: 100%;
+    width: 100%;
+}
+
+.filters .list {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.4s;
+}
+
+.filters .list li {
+    margin: 0 0 2px 1%;
+    width: 14%;
+}
+
+@media screen and (max-width: 800px) { 
+    .filters .menu *{
+        display: inline-block;
+    }
+
+    .filters .menu {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        height: 45px;
+    }
+
+    .filters .menu > * {
+        height: calc(100% + 20px);
+    }
+}

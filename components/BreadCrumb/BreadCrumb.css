@@ -1,0 +1,74 @@
+.breadcrumb {
+    display: block;
+    height: 55px;
+    margin-left: 39px;
+}
+
+.breadcrumb #breadcrumbs-one {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    border: none;
+    overflow: hidden;
+    width:100%;
+}
+
+#breadcrumbs-one .b_link {
+    float: left;
+}
+
+#breadcrumbs-one .elem {
+    padding: 0.7em 1em 0.7em 2em;
+    float: left;
+    text-decoration: none;
+    color: var(--color-text);
+    position: relative;
+    background-color: var(--main-green);
+    background-image: linear-gradient(to right, var(--main-grey), var(--main-green));
+    font-size: 14px;
+}
+
+#breadcrumbs-one .elem:hover {
+    background: var(--main-green);
+    color: var(--color-text);
+    text-shadow: none;
+}
+
+#breadcrumbs-one .elem::after,
+#breadcrumbs-one .elem::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent;
+    border-left: 1em solid;
+    right: -1em;
+}
+
+#breadcrumbs-one .elem::after {
+    z-index: 1;
+    border-left-color: var(--main-green);
+}
+
+#breadcrumbs-one .elem::before {
+    border-left-color: var(--main-grey);
+    right: -1.1em;
+    z-index: 1;
+}
+
+#breadcrumbs-one .elem:hover::after {
+    border-left-color: var(--main-green);
+}
+
+#breadcrumbs-one .elem.current::after,
+#breadcrumbs-one .elem.current::before {
+    content: normal;
+}
+
+@media screen and (max-width: 800px) {
+    .breadcrumb {
+       display:none;
+    }
+    
+}

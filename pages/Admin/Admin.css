@@ -1,0 +1,155 @@
+.admin {
+  height: 100vh;
+  height: 100vh;
+}
+
+.list{
+  width: 95%;
+}
+
+.elem{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 18px;
+  color: var(--color-text);
+}
+
+.manage{
+  overflow: auto;
+  height: 100%;
+  max-height: 665px;
+  min-height: 665px;
+  text-align: left;
+  margin-left: 39px;
+}
+
+.admin_element{
+  font-size: 25px;
+  display: inline-block;
+  min-height: 47px;
+  min-width: 19%;
+  text-decoration: none;
+}
+
+.admin_element * {
+  display: inline-block;
+}
+
+.admin_element p{
+  max-width: 95%;
+}
+.admin_element .fas {
+  font-size: 35px;
+}
+
+.handle *{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.start {
+  border: 1px solid #2196f3af;
+  border-radius: 50px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.start .bar {
+  width: 0%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.start .percent {
+  font-size: 20px;
+}
+
+.start[class="sucess"] .bar {
+  background-color: #4caf4fa9;
+  border-color: #4caf4fa9;
+}
+
+.start[class="start"] .bar {
+  background-color: #2196f3af;
+  border-color: #2196f3af;
+}
+
+.start[class="error"] .bar {
+  background-color: #f44336af;
+  border-color: #f44336af;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch input:checked + .slider {
+  background-color: var(--main-green);
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px var(--main-green);
+}
+
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.btn {
+  border: 2px;
+  cursor: pointer;
+  margin: 15px;
+  font-family: "Roboto";
+  font-size: 16px;
+  padding: 5px;
+}

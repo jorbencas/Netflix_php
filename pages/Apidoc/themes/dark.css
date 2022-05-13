@@ -1,0 +1,37 @@
+.admin{
+    background: var(--main-grey);
+}
+
+.admin_element {
+    color: var(--main-green);
+    border: 1px solid var(--main-green);
+}
+
+.admin_element.active {
+    background-color: var(--main-green);
+    color: var(--color-text);
+  }
+
+.toolbar .tab{
+    color: var(--main-green);
+    background-color: var(--opacity-grey);
+}
+
+.toolbar .tab .tablinks {
+    color: white;
+  }
+
+/* .toolbar .tab .tablink.active, */
+.toolbar .tab .tablinks.active {
+    background: var(--main-green);
+    color: white;
+  }
+  
+  .importador #myProgress {
+    background-color: var(--main-grey);
+  }
+  
+  .importador .percent {
+    color: var(--color-text) !important;
+  }
+  

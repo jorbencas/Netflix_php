@@ -1,0 +1,24 @@
+.user .addform * {
+    color: var(--color-text);
+}
+
+.user .link {
+    background: var(--main-green);
+    border: 2px solid var(--main-green);
+    color: var(--color-text);
+}
+
+.user .link:hover {
+    border-color: var(--main-green);
+    background: var(--opacity-grey);
+    color: var(--color-text);
+}
+
+.user .list .admin_element p{
+    color: var(--color-text);
+}
+
+.user .list .admin_element .img{
+    color: var(--color-text);
+    background-color: var(--main-green);
+}

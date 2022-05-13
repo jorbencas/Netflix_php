@@ -1,0 +1,104 @@
+.wrapper{
+    display: block;
+    text-align: center;
+}
+
+.info_avatar .avatar{
+    display: inline-block;
+    padding: 2px;
+    width: 44px;
+    height: 39px;
+    max-width: 765px;
+}
+
+.info_avatar .avatar img{
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+}
+
+.info_avatar .info_usuario{
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.info_avatar .info_usuario .nombre{
+    font-size: 24px;
+    display: block;
+    text-align:left;
+    margin: 0;
+}
+
+.info_avatar .info_usuario .estado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.info_avatar .info_usuario .estado .input_enviar{
+    width: 100%;
+    font-family: "Roboto";
+    font-size: 20px;
+    background-color: transparent;
+    outline: 0px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.info_avatar .info_usuario .estado .btn_enviar{
+    text-decoration: none;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.info_avatar .info_usuario .estado .btn_enviar i{
+    font-size: 20px;
+}
+
+.commentarios{
+    width: 100%;
+    max-width: 1024px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+
+.comentario{
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0px;
+}
+
+.comentario .info_avatar,
+.comentario .line{
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.comentario .line .date{
+   float: right;
+   width: 20%;
+}
+.comentario .line .date *{
+    display: inline-block;
+}
+
+.comentario .line{
+    width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+    .comentario .line .date{
+        width: 50%;
+     }
+
+     .comentario .line{
+        width: 86%;
+    }
+
+    
+}

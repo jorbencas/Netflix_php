@@ -1,0 +1,78 @@
+.listanime-page {
+    margin: 0;
+    display: block;
+    padding-bottom: 5px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .toolbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left:39px;
+    padding-right: 39px;
+  }
+  
+  .toolbar .tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .listanime-page .tab .tablinks {
+    display: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 12px;
+  }
+  
+  .listanime-page .tab .tablinks i {
+    font-size: 28px;
+  }
+  
+  .listanime-page .tab .tablinks.active{
+    display:inline-block;
+    /* background: var(--main-green);  */
+    color: var(--color-text);
+  }
+  
+  .listanime-page .tab a[class*='active']{
+    display: none!important;
+  }
+  
+  .listanime-page .tab a:not([class*='active']) {
+    display:inline-block;
+    /* background: var(--main-green);  */
+    color: var(--color-text);
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    text-align: center;
+    width: auto;
+  }
+  
+  .paginator * {
+    display: inline-block;
+    color: var(--color-text);
+    font-size: 22px;
+  }
+  
+  .paginator .page a {
+    text-decoration: none;
+    list-style: none;
+    padding: 14px 16px;
+  }
+  
+  .paginator .page a:hover i{
+    color: var(--main-green);
+  }
+  .paginator .page i{
+    font-size: 28px;
+  }
+  

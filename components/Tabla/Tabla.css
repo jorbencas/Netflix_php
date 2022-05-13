@@ -1,0 +1,145 @@
+
+.table{
+  width:100%;
+  background-color: var(--main-grey);
+  color: var(--color-text);
+  overflow-x: auto;
+}
+
+.table .table-thead {
+  text-align: center;
+}
+
+.table .table-thead .thead-cell {
+  padding: 5px;
+}
+
+.table .table-tbody {
+  text-align: center;
+}
+
+.table .table-tbody .tbody-row{
+  width:100%;
+}
+
+.table .table-tbody .tbody-row .tbody-cell {
+  padding: 5px;
+}
+
+ .table .table-tbody .tbody-row .tbody-cell .star-rating {
+  font-size:13px;
+  display: inline-block;
+}
+
+.table .table-tbody .tbody-row .tbody-cell .serie-header_rating .star-rating span .fas {
+  color:var(--main-green);
+}
+
+.table .table-tbody .tbody-row .tbody-cell .serie-header_rating .star-rating span .far {
+  color:var(--main-green);
+}
+
+.table .table-tbody .tbody-row .tbody-cell .favorite{
+  display: inline-block;
+}
+
+.table .table-tbody .tbody-row .tbody-cell .favorite i{
+  color: #f63b3b;
+}
+
+.table .table-tbody .tbody-row .tbody-cell .state_sucess{
+  border-radius: 50px;
+  background-color: #35bb37b3;
+  text-align: center;
+  margin: 0;
+}
+
+.table .table-tbody .tbody-row .tbody-cell .state_danger{
+  border-radius: 50px;
+  background-color: rgba(255, 112, 112, 0.555);
+  text-align: center;
+}
+
+.table .table-tbody .tbody-row .tbody-cell .state_warning{
+  border-radius: 50px;
+  background-color: rgba(255, 209, 83, 0.678);
+  text-align: center;
+}
+
+.table .table-tbody .tbody-row:hover {
+  box-shadow: 0px 0px 10px var(--color-text);
+  transition: all 200ms ease-in;
+}
+
+/* #endingrid .table {
+  width: 100%;
+}
+
+#endingrid .table.table-tbody {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: visible;
+  overflow: auto;
+}
+
+#endingrid .table.table-tbody .tbody-row {
+  width: 100%;
+}
+
+#endingrid .table.table-tbody .tbody-row .tbody-cell {
+  padding: 5px;
+  max-width: 25%;
+}
+
+#endingrid .table.table-tbody .tbody-row:hover {
+  transition: all 200ms ease-in;
+}
+
+
+#episodegrid .table {
+  width: 100%;
+}
+
+#episodegrid .table .table-tbody {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: visible;
+  overflow: auto;
+}
+
+#episodegrid .table .table-tbody .tbody-row {
+  width: 100%;
+}
+
+#episodegrid .table .table-tbody .tbody-row .tbody-cell {
+  padding: 5px;
+  max-width: 25%;
+}
+
+#episodegrid .table .table-tbody .tbody-row:hover {
+  transition: all 200ms ease-in;
+}
+
+#openingrid .table {
+  width: 100%;
+}
+
+#openingrid .table.table-tbody {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: visible;
+  overflow: auto;
+}
+
+#openingrid .table.table-tbody .tbody-row {
+  width: 100%;
+}
+
+#openingrid .table.table-tbody .tbody-row .tbody-cell {
+  padding: 5px;
+  max-width: 25%;
+}
+
+#openingrid .table.table-tbody .tbody-row:hover {
+  transition: all 200ms ease-in;
+} */

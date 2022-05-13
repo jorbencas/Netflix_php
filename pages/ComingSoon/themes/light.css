@@ -1,0 +1,8 @@
+.commingsoon, .div{
+  color: var(--color-text);
+}
+
+.commingsoon .demo .div{
+  background-color: var(--opacity-grey);
+  color: var(--main-green);
+}

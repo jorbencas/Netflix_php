@@ -1,0 +1,17 @@
+{
+    "home" : "Inicio",
+    "mangas" : "Mangas",
+    "blog" : "Blog",
+    "noticias" : "Noticias",
+    "iniciar_sesion" : "Iniciar sessión",
+    "registro" : "Registro",
+    "download" : "Descargas",
+    "salir" : "Salir",
+    "lateral_editar" : "Anime",
+    "lateral_media" : "Entradas",
+    "lateral_upload" : "Actualizar",
+    "lateral_manga" : "Manga",
+    "lateral_import" : "Importador",
+    "lateral_download" : "Descargas",
+    "list_anime" : "Animes"
+}

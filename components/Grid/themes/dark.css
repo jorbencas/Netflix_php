@@ -1,0 +1,8 @@
+.grid-item .fa-play-circle {
+    color: var(--opacity-green);
+}
+
+.data {
+    background-color: var(--main-green);
+    color: var(--color-text);
+}

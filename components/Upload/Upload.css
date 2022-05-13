@@ -1,0 +1,352 @@
+
+
+   .upload #sortableupload{
+    width: 100%;
+    min-height: 156px;
+    height: 156px;
+    max-height: 156px;
+   background-color: var(--main-grey);
+    text-align: left;
+    overflow-x:auto;
+}
+
+.upload #sortableupload table {
+  width: 100%;
+  border: none;
+}
+
+.upload #sortableupload table tr{
+    min-height: 15%;
+    border: none;
+}
+.upload #sortableupload tr .img_div {
+    vertical-align: center;
+    width: 79px;
+    height: 65px;
+    list-style: none;
+    background: transparent;
+    padding: 0 8px;
+    position: relative;
+}
+
+.upload #sortableupload table tr .buttons {
+    margin: 0!important;
+    padding: 0!important;
+    background: transparent;
+   }
+
+
+.upload #sortableupload table tr .descargarfoto{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 999999;
+  opacity: 0.7;
+  display: none;
+}
+
+.upload #sortableupload table tr .descargarfoto .fas {
+    color:var(--color-text);
+    font-size: 45px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%,-40%);
+   }
+
+
+.upload #sortableupload tr .img_div:hover .descargarfoto{
+  display: block;
+}
+
+.upload #sortableupload table tr td:nth-child(2) {
+    line-height: 1;
+    border: none;
+}
+.upload #sortableupload tr td img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px 0px var(--opacity-grey);
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+}
+.upload  .buttons .div_principal {
+  min-width: 95px;
+  display: inline-block !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  background-color: var(--main-grey) !important;
+  color: white !important;
+  font-weight: bold !important;
+  margin: 4px !important;
+  padding: 2px 15px !important;
+  border-radius: 4px !important;
+}
+
+.upload .div_principal {
+  background-color: var(--opacity-green);
+  color: white;
+}
+
+.upload .container_img .select_img {
+  text-align:center;
+  background-color: var(--main-grey);
+  color: white;
+}
+
+.upload .principal_avable {
+  filter: grayscale(100%);
+}
+/* .contenido_principal div {
+  width: 100%;
+  height: 50%;
+} */
+
+.contenido_principal div ul li img{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.contenido_principal div ul li .div_principal {
+  border: 4px dotted var(--color-text);
+}
+
+.upload .contenido_principal ul .ui-sortable-handle {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  list-style: none;
+  background: transparent;
+  margin: 3px;
+  height: 90px;
+}
+.upload #sortableupload .div_img .principal{
+  padding: 2%;
+  font-weight: bold;
+}
+.upload .papeleraclose{
+    background-image: url("img/papelera_open.svg");
+    background-image: url(img/papelera_close.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 35px;
+    padding: 0px;
+    display: inline-block;
+    margin-top: -40px;
+}
+.upload .papeleraopen{
+    height: 40px;
+    margin-top: -45px;
+    background-image: url("img/papelera_open.svg") !important;
+}
+.upload .papeleradelete{
+    background-image: url("img/papelera_delete.svg") !important;
+}
+.upload .ui-sortable-helper{
+    opacity: 0.5 !important;
+}
+
+
+.upload .buttons{width: 100% !important;text-align: right !important;}
+    .upload .buttons .button{
+        padding: 4px 15px;
+        display: inline-block !important;
+        text-align: center !important;
+        cursor: pointer !important;
+        background: var(--main-green);
+        border-radius: 1px;
+        /* border: 2px solid var(--color-text); */
+        color: var(--color-text);  
+        font-weight: bold !important;
+        margin: 9px !important;
+        /* padding: 2px 15px !important; */
+        border-radius: 4px !important;
+        
+    }
+    .upload .buttons .button:hover{/* border: 2px solid var(--main-green); */
+        background: var(--opacity-grey);
+        color: var(--color-text);}
+
+    .upload .buttons .text{
+        width: calc(85% - 7px) !important;
+        padding: 5px !important;
+        display: inline-block !important;
+        text-align: left !important;
+        cursor: pointer !important;
+        background: #ffffff !important;
+        box-shadow: 1px 1px 2px 0px var(--main-green) !important;
+    }
+    .upload .buttons .text::-webkit-input-placeholder{
+        clear: black;
+    }
+
+
+
+.formpopupupdate{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background: #00000099;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* .formpopupupdate .buttons .button{
+    width: 105px;
+   } */
+   
+   .upload #formcreatewrap{
+    display: inline-block;
+    background: var(--main-grey);
+    box-shadow: 0px 0px 2px 0px rgba(255, 255, 255, 0.75);
+    width: 45%;
+    min-width: 500px;
+    padding: 0px 15px 15px 15px;
+    margin: 35vh auto;
+    color: var(--color-text);
+   }
+
+.upload .barraTop{
+    width: calc(100% + 21px);
+    margin-left: -15px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+   background-color: var(--main-green);
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.upload .barraTop span{
+    float: right;
+    width: 28px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: monospace;
+    margin-top: -9px;
+}
+
+.upload .sinID{
+    float: left;
+    width: 100%;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(0,0,0,.7);
+    margin-top: 10px;
+    cursor:not-allowed;
+    margin-bottom: -60px;
+}
+
+
+.upload .importador{
+  display: flex!important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.upload  .importador strong {   
+  margin:3px;
+}
+
+.upload  .importador strong[class="sucess"] i {
+  color: rgba(76, 175, 79, 0.664);
+}
+
+.upload  .importador strong[class="start"] i {
+  color: rgb(33, 150, 243, 0.685);
+}
+
+.upload  .importador strong[class="error"] i{
+  color:rgba(244, 67, 54, 0.685);
+}
+
+.upload  .importador #myProgress {
+  width: 100%;
+  background-color: var(--main-grey);
+  border: 1px solid;
+  border-radius: 50px;
+}
+
+.upload  .importador .bar {
+  width: 0%;
+  height: 5px;
+  text-align: center;
+  line-height: 5px;
+  color: white!important;
+  border-radius: 50px;
+}
+
+.upload  .importador #myProgress[class="sucess"] .bar {
+  background-color: #4caf4fa9;
+  border-color: #4caf4fa9;
+}
+
+.upload  .importador #myProgress[class="start"] .bar {
+  background-color: #2196f3af;
+  border-color: #2196f3af;
+}
+
+.upload .importador  #myProgress[class="error"] .bar {
+  background-color:#f44336af;
+  border-color: #f44336af;
+}
+
+.upload .importador strong i{
+  font-size: 10px;
+}   
+
+.upload .importador p {
+  font-size: 10px;
+  margin: 3px;
+}
+
+.upload .importador .sucess{
+  color: rgba(76, 175, 79, 0.664);
+}
+
+.upload .importador .start{
+  color: rgb(33, 150, 243, 0.685);
+}
+
+.upload .importador .error{
+  color:rgba(244, 67, 54, 0.685);
+}
+
+.messagesupload{
+  width: -webkit-fill-available;
+}
+
+@media all and (max-width:550px) {
+    .upload #formcreatewrap{
+        width: 97%;
+        min-width: initial;
+        margin: 20vh auto;
+    }
+    .upload .formulario .buttons .text{
+        display: block !important;
+        width: 100% !important;
+        margin: 0px !important;
+        padding: 4px !important;
+    }
+    .upload .formulario .buttons .button{
+        display: block !important;
+        margin: 7px 0px 23px !important;
+    }
+}

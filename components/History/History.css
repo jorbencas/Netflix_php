@@ -1,0 +1,104 @@
+
+ .history .list{
+    width: 65%;
+}
+
+ .history .list .item{
+    display: block;
+    width: 100%;
+}
+
+ .history .list .toolbar{
+    display: block;
+    text-align: end;
+  }
+  
+ .history  .list .toolbar .tablinks {
+    background-color: var(--opacity-grey);
+    display: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--main-green);
+    font-size: 12px;
+  }
+  
+ .history  .list .toolbar .tablinks i {
+    padding: 14px 16px;
+  }
+ .history  .list .toolbar .tablinks *{
+    font-size: 12px;
+  }
+  
+ .history  .list .toolbar .tablinks:hover {
+    background-color: var(--opacity-grey);
+    color: var(--main-green);
+  }
+  
+ .history  .list .toolbar .tablinks.active{
+    display:inline-block;
+    background: var(--main-green); 
+    color: var(--color-text);
+  }
+  
+  
+  
+ .history  .list .toolbar a[class*='active']{
+    display: none!important;
+  }
+  
+ .history  .list .toolbar a:not([class*='active']) {
+    display:inline-block;
+    background: var(--main-green); 
+    color: var(--color-text);
+  }
+
+  .history .list .lista {
+    border: 1px solid var(--main-grey);
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 14px;
+     display: flex;
+     justify-content: space-between;
+     background: var(--main-grey);
+     color: var(--color-text);
+     align-items: center;
+ }
+ 
+.history  .list .lista .texto_line{
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     width:100%;
+     padding-right: 7px;
+     height: 80px;
+     max-height: 350px;
+     color: var(--color-text);
+     text-decoration: none;
+ }
+ 
+.history  .list .lista:hover .texto_line:hover,
+.history  .list .lista:hover .texto_line:hover .img{
+     background-color: var(--main-green);
+     -webkit-box-shadow:  inset -147px -5px 52px -82px   var(--main-green);
+     -moz-box-shadow:  inset -147px -5px 52px -82px   var(--main-green);
+     box-shadow:  inset -147px -5px 52px -82px   var(--main-green);
+ }
+ 
+.history  .list  .lista .texto_line .img{
+     display: inline-block;
+     width: 33%;
+     min-width: 90px;
+     height: 80px;
+     -webkit-box-shadow: inset -147px -5px 52px -82px   var(--main-grey);
+     -moz-box-shadow: inset -147px -5px 52px -82px   var(--main-grey);
+     box-shadow: inset -147px -5px 52px -82px   var(--main-grey);
+ }
+ 
+.history  .list .lista .texto_line .texto {
+     display: inline-block;
+     max-width: 65%;
+     font-size: 16px;
+ }
+ 

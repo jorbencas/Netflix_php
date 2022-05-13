@@ -1,0 +1,147 @@
+.modal_background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+    color: var(--color-text);
+    text-align: center;
+    opacity: 0;
+    display: none;
+    transition: all 0.6s ease-in;
+}
+
+.modal_content{
+    background-color: var(--main-grey);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: #000000;
+    width: 70vw;
+    height: 80vh;
+    margin: 5vh 15vw;
+    opacity: 0;
+    display: none;
+    transition: all 0.6s ease-in;
+    overflow: hidden;
+}
+
+.modal_content .modal_header{
+    background-color:  var(--main-green);
+    color: var(--color-text);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal_content .modal_footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--main-grey);
+}
+
+.modal_content .modal_footer div{
+    display: inline-block;
+    margin: 2px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    background-color: var(--main-grey);
+}
+
+.modal_content .modal_footer div[class^='total'] * {
+    padding: 5px;
+}
+
+.modal_content .modal_footer div[class^='total'] .titulo  {
+    background-color:  var(--main-green);
+    color: var(--color-text);
+}
+
+.modal_content .modal_footer  div[class^='total'] .valor {
+    color:  var(--main-green);
+}
+
+.modal_content button{
+    padding: 5px;
+    background-color:  var(--main-green);
+    color: var(--color-text);
+    border: none;
+}
+
+.modal_content button:hover{
+    color:  var(--main-green);
+    background: var(--color-text);
+    border: 1px solid  var(--main-green);
+}
+
+.modal_content .modal_body {
+    text-align: center;
+    /*height: calc(85vh - (68px + 49px)); Versiíon con Footer*/
+    height: calc(85vh - (68px + 0px));
+    min-height: fit-content;
+    overflow: auto;
+    width: 100%;
+}
+
+.modal_content .modal_body .modals {
+    width: 100%;;
+}
+
+.modal_content .modal_body .modal_lista{
+    display: inline-block;
+    width: 15%;
+    height: 125px;
+    margin: 5px;
+}
+
+.modal_content .modal_body .modal_lista .img  {
+    display: block;
+    text-align: center;
+    width:100%;
+    height: 100%;
+    color:  var(--main-green);
+    border: 0px;
+    margin: 0;
+}
+
+.modal_content  .modal_body .modal_lista .img img{
+    margin: 0px;
+    width:100%;
+    height: 100%;
+}
+
+.modal_content .modal_body .modal_lista strong {
+    display: block;
+    text-align: center;
+    color: var(--color-text);
+    background:  var(--main-green);
+    width:100%;
+}
+
+.modal_content .modal_body .modal_lista strong{
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 800px) { 
+    .modal_content{
+        width: 90vw;
+        height: 90vh;
+        margin: 1vh 5vw;
+    }
+
+    .modal_content .modal_body{
+        width: 100%;
+    }
+
+    .modal_content .modal_body .modal_lista{
+        display: block;
+        width: 95%;
+        height: 226px;
+        margin: 5px;
+    }
+}

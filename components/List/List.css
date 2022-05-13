@@ -1,0 +1,69 @@
+.animes_element{
+    max-height: 145px;
+    width:45%; 
+    max-width: 925px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin: 13px 13px;
+  }
+  
+  .animes_element .img{
+    height: 100%; 
+    width: 95px;
+    overflow: hidden;
+    vertical-align: top;
+  }
+  
+  .animes_element .img img{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .animes_element .info{
+    width: 77%;
+    height: 100%; 
+    overflow: hidden;
+    vertical-align: top;
+    margin-left: 6px;
+  }
+  
+  .animes_element .info *{
+    display: block;
+    color: var(--color-text);
+  }
+  
+  .animes_element .info p{
+    max-width: 825px;
+    width:100%;
+    font-size: 14px;
+  }
+  
+  .animes_element .info ul li{
+    display: inline-block;
+    background-color: var(--main-green);
+    margin-right: 8px;
+    padding:2px;   
+    vertical-align: bottom;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 800px) {
+  
+    .animes_element{
+      width: 100%;
+      margin-top: 15px;
+    }
+  
+    .animes_element .img{
+      width: 20%;
+    }
+  
+    .animes_element .info{
+      width: 75%;
+      overflow: auto;
+    }
+  
+  }

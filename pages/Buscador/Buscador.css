@@ -1,0 +1,64 @@
+.search_full{
+  width: 100%;
+}
+
+.search_full form{
+  height: 59px;
+  max-height: 89px;
+  color: var(--color-text);
+  background-color: var(--main-grey);
+  text-align: center;
+}
+
+.form-control {
+  display: inline-block;
+  font-family: "Roboto";
+  background: transparent;
+  border-style: none;
+  vertical-align: middle;
+  text-align: left;
+  letter-spacing: 1px;
+  height: 100%;
+  color: var(--color-text);
+}
+
+.search_full .form-control{
+  width: 38%;
+}
+
+.search_icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  background: transparent;
+  height: 100%;
+  padding: 0px 3px;
+  border: none;
+  color: var(--color-text);
+}
+
+.lista_resultados {
+  color: var(--color-text);
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  z-index: 0;
+  min-height: 89px;
+}
+
+.lista_resultados .animes {
+  max-height: 1050px;
+  display: block;
+  overflow: auto;
+  height: 100%;
+  width: calc(100% + 20px);
+}
+
+@media screen and (max-width: 800px) {
+  form input {
+    width: 84%;
+  }
+  .search_icon {
+    display: inline-block;
+  }
+}

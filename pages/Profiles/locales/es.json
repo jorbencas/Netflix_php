@@ -1,0 +1,14 @@
+{
+        "auth_data" : "Mis datos",
+        "auth_animes" : "Mis Animes",
+        "auth_mangas" : "Mis Mangas",
+        "auth_events" : "Mis eventos",
+        "auth_news" : "Mis Noticias",
+        "auth_favorites": "Mis Favoritos",
+        "auth_comments":"Mis Comentarios",
+        "auth_config":"Mi Configuración",
+        "auth_history":"Mi Historial",
+        "acces":"Acceder",
+        "addprofile":"Añadir un Perfil",
+        "placeholder":"Nombre del nuevo perfil"
+}

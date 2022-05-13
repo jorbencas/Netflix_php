@@ -1,0 +1,131 @@
+.episode-page {
+  padding: 0.5%;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.episode-page .element .options .first-child,
+.episode-page .element .options .second-child {
+  border: 1px solid var(--main-green);
+  background-color: var(--main-green);
+  text-decoration: none;
+  color: var(--color-text);
+  margin: 0 0.5em !important;
+  padding: 0 0.7em !important;
+}
+
+.episode-page .element .options .first-child i,
+.episode-page .element .options .second-child i {
+  padding: 0 0.7em;
+}
+
+.episode-page .element .options .option:hover,
+.episode-page .element .options .option-btn:hover {
+  color: var(--main-green);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* .episode-page .element .options .option.actions {
+  margin-top: 15px;
+} */
+
+.episode-page .element .options select {
+  padding: 5px 15px;
+  background: var(--main-green);
+  border-radius: 2px;
+  color: var(--color-text);
+  width: 150px;
+}
+
+.episode-page .element .options select option {
+  padding: 5px 15px;
+  background: var(--main-green);
+  border-radius: 2px;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.episode-page .element .options select option:hover {
+  padding: 5px 15px;
+  background: var(--main-green);
+  color: var(--main-green);
+  text-align: center;
+}
+
+.episode-page .element .options .option.actions {
+  border: 1px solid var(--main-green);
+}
+
+.episode-page .element .options .option.actions .submit {
+  background: var(--main-grey);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto";
+  font-size: 13px;
+  padding: 11px;
+  margin: 0;
+  border: none;
+  color: var(--main-green);
+}
+
+.episode-page .element .options .option.actions .submit:hover {
+  background: var(--main-green);
+  color: var(--opacity-grey) !important;
+  transition: none !important;
+}
+
+.episode-page .element .actions input[type="number"] {
+  text-align: center;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 18px;
+  color: var(--main-green);
+  outline: none;
+  background: transparent;
+  border: none;
+  width: 45px;
+}
+
+.animes_intereseted {
+  display: block;
+  color: var(--color-text);
+  padding: 0px 39px;
+  margin-right: 0;
+  text-align: left;
+  width: auto;
+  overflow: hidden;
+  /* background-color: var(--opacity-grey); */
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+  .episode-page .element .element_video{
+    max-width: 100%;
+    max-height: 375px;
+  }
+
+  .episode-page .element .options .option.actions * {
+    text-align: center;
+    margin: auto;
+  }
+	
+	.lista_proximas{
+		display: block;
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.lista_proximas .lista {
+		width: 90%;
+		display: block;
+		margin:auto;
+  }
+  
+  .episode-page .element .options{
+    flex-direction: column;
+  }
+
+}

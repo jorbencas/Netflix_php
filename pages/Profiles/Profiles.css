@@ -1,0 +1,388 @@
+.user {
+  background-color: var(--main-grey);
+  padding-bottom: 5px;
+  color: var(--color-text);
+}
+
+.banner {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 15%;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 2;
+  transition: all 0.3s;
+}
+
+.banner::after,
+.banner::before {
+  box-sizing: border-box;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.banner .banner:hover {
+  filter: none;
+  cursor: pointer;
+}
+
+.banner .banner_img {
+  filter: blur(5px);
+  width: 110% !important;
+  max-width: 110%;
+  position: absolute;
+  top: -25%;
+  left: -5%;
+}
+
+.information .ed-information {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 10%; */
+}
+
+.information .ed-information .serie-header {
+  text-align: center;
+  position: relative;
+  top: -7.5em;
+}
+
+.information .ed-information .serie-header img {
+  max-width: 190px;
+  border: 1px solid #111;
+  border-radius: 50% !important;
+}
+
+.information .ed-information .serie-header h1 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: var(--main-green);
+  font-weight: 300;
+}
+
+.user .tab {
+  overflow: hidden;
+  margin-left: 39px;
+  margin-right: 39px;
+}
+
+.user .tab button {
+  background-color: var(--opacity-grey);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: var(--color-text);
+}
+
+.user .tab button:hover {
+  background-color: var(--opacity-grey);
+  color: var(--color-text);
+}
+
+.user .tab button * {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.user .tab button.active {
+  background: var(--main-green);
+  color: var(--color-text);
+}
+
+/* Style the tab content */
+.user .tabcontent {
+  display: none;
+  padding: 6px 15px;
+  /* border-top: 1px solid var(--main-green); */
+}
+
+.user .wrap {
+  display: block;
+}
+
+.contenedor-formulario {
+  color: var(--main-green);
+  padding: 10px;
+  background-color: var(--main-grey);
+  width: 100%;
+}
+
+.user input {
+  display: inline-block;
+  border: 1px solid var(--main-green);
+  background: var(--opacity-grey);
+  margin: 22px;
+  color: var(--main-green);
+  font-family: "Roboto";
+  font-size: 18px;
+  width: 45%;
+  /* padding: 10px; */
+}
+
+.siglas {
+  width: 25%;
+}
+
+.contenedor-formulario .formulario .input-group {
+  margin: 12px;
+  text-align: center;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox,
+.contenedor-formulario .formulario .input-group.radio {
+  margin: 12px;
+  text-align: left;
+}
+
+.contenedor-formulario .formulario .link {
+  display: inline-block;
+  margin: 22px;
+  font-size: 18px;
+  width: 45%;
+  padding: 10px;
+}
+
+.contenedor-formulario .formulario .submit,
+.contenedor-formulario .formulario .link {
+  background: var(--main-green);
+  border: 2px solid var(--color-text);
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: "Roboto";
+  max-width: 235px;
+  text-align: center;
+}
+
+.contenedor-formulario .formulario .submit:hover {
+  /* border: 2px solid var(--main-green); */
+  background: var(--opacity-grey);
+  /* color: var(--color-text); */
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label,
+.contenedor-formulario .formulario .input-group.radio label {
+  display: inline-block;
+  cursor: pointer;
+  color: var(--main-green);
+  position: relative;
+  padding: 5px 15px 5px 51px;
+  font-size: 1em;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label:hover,
+.contenedor-formulario .formulario .input-group.radio label:hover {
+  background: var(--opacity-green);
+  color: var(--color-text);
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label:before,
+.contenedor-formulario .formulario .input-group.radio label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 15px;
+  border-radius: 50%;
+  background: none;
+  border: 2px solid var(--main-green);
+}
+
+.contenedor-formulario .formulario .input-group.radio input[type="radio"] {
+  display: none;
+}
+
+.contenedor-formulario
+  .formulario
+  .input-group.radio
+  input[type="radio"]:checked
+  + label:before {
+  display: none;
+}
+
+.contenedor-formulario
+  .formulario
+  .input-group.radio
+  input[type="radio"]:checked
+  + label {
+  padding: 5px 15px;
+  background: var(--main-green);
+  border-radius: 2px;
+  color: var(--color-text);
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label:before {
+  border-radius: 3px;
+}
+
+.contenedor-formulario
+  .formulario
+  .input-group.checkbox
+  input[type="checkbox"] {
+  display: none;
+}
+
+.contenedor-formulario
+  .formulario
+  .input-group.checkbox
+  input[type="checkbox"]:checked
+  + label:before {
+  display: none;
+}
+
+.contenedor-formulario
+  .formulario
+  .input-group.checkbox
+  input[type="checkbox"]:checked
+  + label {
+  background: var(--main-green);
+  color: var(--color-text);
+  padding: 5px 15px;
+}
+
+
+.contenedor-formulario .formulario .concret {
+  display: inline-block;
+  position: relative;
+  width: 35%;
+  /* margin: 22px; */
+  margin-left: 0;
+  margin-right: 0;
+  border: 1px solid var(--main-green);
+  background: var(--opacity-grey);
+}
+
+.contenedor-formulario .formulario .concret input {
+  width: 85%;
+  margin: 0;
+  border: 0px!important;
+  display: inline-block;
+  background: transparent;
+}
+
+.contenedor-formulario .formulario .concret i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.user .list{
+  margin: 12px;
+  display: block;
+}
+
+.user .list .admin_element{
+  display: inline-block;
+  margin: 2px 0px;
+}
+
+.user .list .admin_element .img{
+  width: 65px;
+  height: 65px;
+  background-color: var(--main-green);
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid var(--main-grey);
+
+}
+
+.user .list .admin_element .img .letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user .list .admin_element .text{
+  font-size: 20px;
+  margin: 2px;
+}
+
+.user .addform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+}
+
+.user .addform .text{
+  background: transparent;
+  border-style: none;
+  text-align: left;
+  letter-spacing: 1px;
+  width: 38%;
+  border: none;
+  text-decoration: none;
+}
+
+.user .addform .add_icon{
+  font-size: 18px;
+  background: transparent;
+  height: 100%;
+  padding: 0px 3px;
+  border: none;
+}
+
+.user .link {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding:0px 25px;
+  border: none;
+  margin: 2px 0px;
+}
+
+  @media screen and(max-width: 800px) {
+    .contenedor-formulario {
+      width: 100%;
+    }
+  
+    .contenedor-formulario .formulario {
+      width: 90%;
+    }
+  
+    .contenedor-formulario .formulario .input-group {
+      width: 100%;
+      margin: 0px;
+    }
+  
+    .contenedor-formulario .formulario input {
+      width: 100%;
+    }
+  
+    .contenedor-formulario .formulario .concret {
+      width: 91%;
+      margin: 22px;
+    }
+  
+    .contenedor-formulario .formulario .concret input {
+      width: 100%;
+    }
+  
+    .contenedor-formulario .formulario .input-group.checkbox,
+    .contenedor-formulario .formulario .input-group.radio {
+      margin: 0px;
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+                            
+/* TEAM */
+Administrador: Jorge Bneyto Castelló.                          
+Site: jorbencas@gmail.com, enlace a formulario de contacto,...        
+Twitter: @jorbencas.                     
+Location: Ontinyent, Valencia, Espanya.			
+							
+/* THANKS */						
+Name: jorbencas
+                     
+/* SITE */                       
+Last update: 2019/06/16                        
+Standards: HTML5, CSS3, PHP ...            
+Components: MVC, jQuery, etc.                       
+Software: VisualStudio code.
+   
+       

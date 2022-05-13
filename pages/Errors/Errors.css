@@ -1,0 +1,51 @@
+.error{
+    position: relative;
+    width:100vw;
+    height: 100vh;
+}
+
+.error .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    width: 808px;
+    max-height: 308px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error .container .first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.error .container *{
+    margin: 15px;
+    font-family: "Inconsolata-Bold";
+}
+
+.error .container h1{
+    font-size: 45px;
+}
+
+.error img{
+    max-height: 15%;
+    max-width: 15%;
+}
+
+.error .text{
+    padding: 15px;
+    max-width: fit-content;
+    font-size: 15px;
+}
+
+.error .link {
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 900;
+}

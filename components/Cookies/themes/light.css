@@ -1,0 +1,15 @@
+p{
+  color: var(--color-text);
+}
+
+.p .button {
+  background: var(--main-green);
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
+.p .button:hover {
+  /* border: 2px solid var(--main-green); */
+  background: var(--opacity-grey);
+  /* color: var(--color-text); */
+}

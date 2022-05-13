@@ -1,0 +1,68 @@
+header {
+  background-color: var(--main-grey);
+  color: var(--color-text);
+}
+
+nav {
+  border-bottom-color: var(--main-green);
+}
+
+.menu_bar .link.user_item {
+  color: var(--color-text);
+}
+
+nav .link .badge,
+.menu_bar .link.cart .badge {
+  background-color: var(--main-green);
+  color: var(--color-text);
+}
+
+nav {
+  background-color: var(--main-grey);
+  color: var(--color-text);
+}
+
+nav .list .list_element .link {
+  color: var(--color-text);
+}
+
+.logout .button {
+  color: var(--color-text);
+}
+
+nav .list .list_element:hover {
+  color: var(--main-grey);
+  background-color: var(--main-green);
+}
+
+nav .list .list_element.active .link {
+  color: var(--main-green);
+}
+
+nav .list .list_element.active:hover .link {
+  color: var(--color-text);
+}
+
+.filters {
+  background: var(--main-grey);
+}
+
+.filters .link {
+  color: var(--color-text);
+}
+
+.filters .link:hover {
+  background: var(--opacity-green);
+}
+
+
+@media screen and (max-width: 800px) {
+  .menu_bar {
+    background-color: var(--main-grey);
+    color: var(--color-text);
+  }
+
+  .menu_bar .link {
+    color: var(--color-text);
+  }
+}

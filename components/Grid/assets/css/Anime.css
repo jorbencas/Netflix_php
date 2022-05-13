@@ -1,0 +1,120 @@
+.grid-anime {
+    display: inline-block;
+    background: transparent;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    margin: 8px;
+    height: 230px;
+    width: 146px;
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+.grid-anime .element_kind{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 3px 7px;
+    font-size: 12px;
+}
+
+.grid-anime .element_kind.serie { background-color: #35bb37;}
+
+.grid-anime .element_kind.pelicula { background-color: #357fbb;}
+
+.grid-anime .element_kind.ova { background-color: #eeae36;}
+
+.grid-anime .element_kind.temporada { background-color: #ee3636;}
+
+.grid-anime .element_img {
+    height: 230px;
+    width:146px;
+}
+
+.grid-anime:hover .element_text {
+    height: 228px;
+}
+
+.grid-anime .element_text {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 -4px 6px 0 var(--opacity-grey);
+    -moz-box-shadow: 0 -4px 6px 0 var(--opacity-grey);
+    box-shadow: 0 -4px 6px 0 var(--opacity-grey);
+    height: 18px;
+    width:146px;
+    background: var(--opacity-grey);
+    color: var(--color-text);
+    transition: height 0.4s;
+    -moz-transition: height 0.4s;
+    -webkit-transition: height 0.4s;
+}
+
+.grid-anime .element_text .titulo {
+    font-size: 15px;
+}
+
+.grid-anime .element_text ul li{
+    display: inline-block;
+    background-color: var(--main-green);
+    margin-right: 8px;
+    padding:2px;   
+    vertical-align: bottom;
+    font-size: 14px;
+}
+
+.nuevo{
+    position: absolute;
+    top:8px;
+    right: -60px;
+    padding: 3px 4px;
+    font-size: 12px;
+    background-color: #6835bb;/*var(--opacity-grey);*/
+    color: var(--color-text);
+    width: 100%;
+    transform: rotate(45deg);
+}
+
+@media screen and (max-width: 800px) { 
+    .grid-anime{
+        height: 305px;
+        width: 208px;
+        z-index: 0;
+    }
+
+    .grid-anime .element_img {
+        height: 305px;
+        width: 208px;
+    }
+    
+    .grid-anime .element_text {
+        height: 25px; 
+        width: 208px;
+    }
+
+    .grid-anime:hover .element_text {
+        height: 305px; 
+    }
+
+    .grid-anime .element_kind.serie,
+    .grid-anime .element_kind.pelicula,
+    .grid-anime .element_kind.ova {
+        font-size: 20px;
+    }
+
+    .grid-anime .element_text .titulo {
+        font-size: 20px;
+    }
+    
+    .nuevo{
+        right: -86px;
+        font-size: 20px;
+    }
+
+
+}

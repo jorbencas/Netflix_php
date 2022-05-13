@@ -1,0 +1,90 @@
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--main-grey);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--opacity-green);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-green);
+  }
+
+  body{
+    /* background-color: #666666; */
+    background-color: var(--main-grey);
+  }
+
+.progress-container{
+    background: var(--opacity-grey);
+}
+
+.progress-bar{
+    background: var(--main-green);
+}
+
+.button_fixed{
+    border-color: var(--color-text);
+    color: var(--color-text);
+    background: var(--main-green);
+}
+
+.alert{
+    color: var(--color-text);
+}
+
+.mensajes .notification{
+    color: var(--color-text);
+}
+
+.mensajes .delete:hover {
+    color: var(--color-text);
+  }
+
+.pre{
+  background-color: var(--main-grey);
+  color: var(--color-text);
+}
+
+
+.progress-container{
+  background: var(--opacity-grey);
+}
+
+.progress-bar{
+  background: var(--main-green);
+}
+
+.button_fixed{
+  border-color: var(--color-text);
+  color: var(--color-text);
+  background: var(--main-green);
+}
+
+.alert{
+  color: var(--color-text);
+}
+
+.mensajes .notification{
+  color: var(--color-text);
+}
+
+.mensajes .delete:hover {
+  color: var(--color-text);
+}
+
+
+.container-loading{
+  background-color: var(--opacity-grey);
+}
+
+.container-loading .texto{
+  color: var(--main-green);
+}
+
+.container-loading .folding .sk-cube:before{
+  background-color: var(--main-green);
+}

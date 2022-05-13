@@ -1,0 +1,23 @@
+{
+        "home" : "Inicio",
+        "mangas" : "Mangas",
+        "blog" : "Blog",
+        "noticias" : "Noticias",
+        "iniciar_sesion" : "Iniciar sessión",
+        "registro" : "Registro",
+        "download" : "Descargas",
+        "salir" : "Salir",
+        "lateral_editar" : "Anime",
+        "users" : "Usuarios",
+        "list_anime" : "Animes",
+        "langs":"Idiomas",
+        "backup":"Copia de los datos",
+        "files":"Gestor de ficheros",
+        "errors":"Errores de ficheros",
+        "apidoc":"Documentación de la api",
+        "genere":"Genero",
+        "type":"Tipo",
+        "year":"Año",
+        "lang":"Idioma",
+        "temporada":"Temporada"
+}

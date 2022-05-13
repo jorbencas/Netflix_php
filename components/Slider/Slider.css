@@ -1,0 +1,78 @@
+
+.contenedor {
+	width: 100%;
+	max-width: 700px;
+	height: 100%;
+	display: flex;
+	align-items:center;
+}
+
+.tarjeta {
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.slider_banner {
+	overflow: hidden;
+	position: relative;
+}
+
+.slider_banner .banner {
+	position: relative;
+	width: 100%; 
+}
+
+.slider_banner .banner .anime {
+	vertical-align: top;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+
+.slider_banner .banner .anime .first{
+	overflow: hidden;
+	margin: 0;
+    max-width:100%;
+	max-height: 357px;
+	position: relative;
+} 
+
+.slider_banner .banner .anime .first img{
+    width:700px; 
+	height:600px;
+	max-width: 1000px;
+    max-height: 1000px;
+}
+
+.slider_banner .banner .anime .first .titulo{
+	overflow: hidden;
+	position: absolute;
+	bottom: 0px;
+	width:100%;
+	height: 45px;
+	text-align: center;
+	font-family: "Roboto-Thin";
+	font-family: normal;
+}
+
+.slider_banner .banner .anime .first .titulo h2{
+	font-size: 20px;
+}
+
+.slider_banner .banner .anime .first .titulo p{
+	font-size: 15px;
+}
+
+.slider_banner .flecha-banner {
+	font-size: 35px;
+	line-height: 35px;
+	position: absolute;
+	top:50%;
+}
+
+.slider_banner .flecha-banner.anterior {left: 20px;}
+.slider_banner .flecha-banner.siguiente {right: 20px;}

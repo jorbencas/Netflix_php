@@ -1,0 +1,452 @@
+.episode-page {
+  padding: 0.5%;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.episode-page .element .element_video {
+  border: 1px solid var(--main-green);
+  max-height: 670px;
+  max-width: 765px;
+  width: 960px;
+  height: 540px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2%;
+  position: relative;
+}
+
+.episode-page .element .element_video video {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.episode-page .element .element_title {
+  color: var(--main-green);
+  text-align: center;
+  font-size: 18px;
+}
+
+.episode-page .options {
+  /* max-width: 125px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.episode-page .element .options .option-btn {
+  font-size: 20px;
+  color: var(--main-green);
+  display: inline-block;
+  line-height: 1.6;
+  margin: 0 0.5em;
+  padding: 0 0.7em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.episode-page .element .options .option-btn i {
+  color: var(--main-green);
+}
+/* .episode-page .element .options .option {
+  display: inline-block;
+  list-style: none;
+  color: var(--main-green);
+}
+
+.episode-page .element .options .option * {
+  display: inline-block;
+} */
+.episode-page .element .options .first-child,
+.episode-page .element .options .second-child {
+  border: 1px solid var(--main-green);
+  background-color: var(--main-green);
+  text-decoration: none;
+  color: var(--color-text);
+  margin: 0 0.5em !important;
+  padding: 0 0.7em !important;
+}
+
+.episode-page .element .options .first-child i,
+.episode-page .element .options .second-child i {
+  padding: 0 0.7em;
+}
+
+.episode-page .element .options .option:hover,
+.episode-page .element .options .option-btn:hover {
+  color: var(--main-green);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* .episode-page .element .options .option.actions {
+  margin-top: 15px;
+} */
+
+.episode-page .element .options select {
+  padding: 5px 15px;
+  background: var(--main-green);
+  border-radius: 2px;
+  color: var(--color-text);
+  width: 150px;
+}
+
+.episode-page .element .options select option {
+  padding: 5px 15px;
+  background: var(--main-green);
+  border-radius: 2px;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.episode-page .element .options select option:hover {
+  padding: 5px 15px;
+  background: var(--main-green);
+  color: var(--main-green);
+  text-align: center;
+}
+
+.episode-page .element .options .option.actions {
+  border: 1px solid var(--main-green);
+}
+
+.episode-page .element .options .option.actions .submit {
+  background: var(--main-grey);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto";
+  font-size: 13px;
+  padding: 11px;
+  margin: 0;
+  border: none;
+  color: var(--main-green);
+}
+
+.episode-page .element .options .option.actions .submit:hover {
+  background: var(--main-green);
+  color: var(--opacity-grey) !important;
+  transition: none !important;
+}
+
+.episode-page .element .actions input[type="number"] {
+  text-align: center;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 18px;
+  color: var(--main-green);
+  outline: none;
+  background: transparent;
+  border: none;
+  width: 45px;
+}
+
+.animes_intereseted {
+  display: block;
+  color: var(--color-text);
+  padding: 0px 39px;
+  margin-right: 0;
+  text-align: left;
+  width: auto;
+  overflow: hidden;
+  /* background-color: var(--opacity-grey); */
+}
+
+
+.screen {
+  cursor: pointer;
+  width: 60%;
+  background: #000 !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.movil_controls,
+.controls {
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0px;
+  position: absolute;
+  bottom: 1px;
+}
+
+.movil_controls .btn,
+.controls .btn {
+  margin-left: 8px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.controls .btn .fa-play,
+.controls .btn .fa-stop,
+.controls .btn .fa-pause,
+.controls .btn .fa-expand,
+.controls .btn .fa-compress {
+  color: var(--main-green);
+  font-size: 20px;
+  padding-left:4px;
+}
+
+.movil_controls .timestamp,
+.controls .timestamp {
+  color: var(--main-green);
+  font-weight: bold;
+  margin-left: 8px;
+  width: max-content;
+}
+.movil_controls  .vol-controls,
+.controls .vol-controls{
+  max-width: 125px;
+  margin-left: 8px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: var(--main-green);
+}
+
+.movil_controls  .vol-controls .vol__slider,
+.controls .vol-controls .vol__slider{
+  width: 100%;
+}
+
+.movil_controls  .vol-controls .vol__slider .player__slider,
+.controls .vol-controls .vol__slider .player__slider{
+  width: -webkit-fill-available;
+  color: var(--main-green);
+  -webkit-appearance: none;
+  width:100%;
+  height: 8px;
+  border-radius: 50px;
+  background: var(--color-text);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.movil_controls .vol-controls .vol__slider .player__slider::-webkit-slider-thumb,
+.controls .vol-controls .vol__slider .player__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--main-green);
+  cursor: pointer;
+}
+
+.movil_controls .vol-controls .vol__slider .player__slider::-moz-range-thumb,
+.controls .vol-controls .vol__slider .player__slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--main-green);
+  cursor: pointer;
+}
+
+.movil_controls .progress,
+.controls .progress{
+  margin-left: 8px;
+  width: -webkit-fill-available;
+  color: var(--main-green);
+  -webkit-appearance: none;
+  width:100%;
+  max-width: 325px;
+  height: 8px;
+  border-radius: 50px;
+  background: var(--color-text);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.movil_controls .progress::-webkit-slider-thumb,
+.controls .progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--main-green);
+  cursor: pointer;
+}
+
+.movil_controls .progress::-moz-range-thumb ,
+.controls .progress::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--main-green);
+  cursor: pointer;
+}
+
+.movil_controls  .speed,
+.controls .speed {
+  padding: 5px;
+  border-radius: 2px;
+  color: var(--main-green);
+  background-color: transparent;
+  border: transparent;
+}
+
+.movil_controls .speed  option,
+.controls .speed  option {
+  padding: 5px;
+  border-radius: 2px;
+  color: var(--main-green);
+  background: #000 !important;
+}
+
+/* .movil_controls .speed  option:hover,
+.controls .speed  option:hover {
+  background: var(--opacity-grey);
+} */
+
+.movil_controls{
+  display: none;
+}
+
+.videoplayer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  width: 100vw;
+  height: 100vh;
+  background: #000 !important;
+}
+
+.videoplayer .screen{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+
+.videoplayer .movil_controls,
+.videoplayer .controls {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  left: 0%;
+  z-index: 600;
+}
+
+.videoplayer .controls  .progress{
+  max-width: 73%;
+}
+
+.videoplayer .overlay{
+  z-index: 600;
+}
+
+.overlay{
+  position: absolute;
+  bottom: 100%;
+  top:0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  background-color: var(--opacity-grey);
+}
+
+.overlay .fa-play-circle {
+    margin: auto;
+    white-space: nowrap;
+    color: var(--opacity-green);
+    font-size: 40px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .screen, .movil_controls {
+    width: 100%;
+  }
+
+  .movil_controls{
+    display: block;
+  }
+
+  .controls{
+    display: none;
+  }
+
+  .movil_controls .first_line,
+  .movil_controls .second_line {
+    display: block;
+    max-width: 100%;
+  }
+
+  .movil_controls .btn .fa-play,
+  .movil_controls .btn .fa-stop,
+  .movil_controls .btn .fa-pause,
+  .movil_controls .btn .fa-expand,
+  .movil_controls .btn .fa-compress {
+    color: var(--main-green);
+    font-size: 18px;
+    padding-left:2px;
+  }
+
+  .movil_controls .vol-controls{
+    display: inline-flex;
+  }
+
+  .movil_controls .progress{
+    margin-bottom: 8px;
+  }
+
+  .video{
+    display: block;
+    width: 100%;
+}
+
+  .episode-page .element .element_video{
+    max-width: 100%;
+    max-height: 375px;
+  }
+
+  .episode-page .element .options .option.actions * {
+    text-align: center;
+    margin: auto;
+  }
+	
+	.lista_proximas{
+		display: block;
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.lista_proximas .lista {
+		width: 90%;
+		display: block;
+		margin:auto;
+  }
+  
+  .episode-page .element .options{
+    flex-direction: column;
+  }
+
+}

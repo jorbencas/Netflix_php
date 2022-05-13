@@ -1,0 +1,21 @@
+.error {
+  color: var(--main-green);
+}
+
+.error .text {
+  background-color: var(--opacity-green);
+  color: var(--main-grey);
+  border: 2px solid var(--main-grey);
+}
+
+.error .link {
+  background: var(--main-green);
+  border: 2px solid var(--color-text);
+  color: var(--color-text);
+}
+
+.error .link:hover {
+  border-color: var(--main-green);
+  background: var(--opacity-grey);
+  color: var(--color-text);
+}

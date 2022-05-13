@@ -1,0 +1,342 @@
+
+.detail-page {
+    padding-bottom: 5px;
+    color:var(--color-text);
+  }
+  .banner {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    height: 0;
+    padding-bottom: 15%;
+    z-index: 0;
+  }
+  
+  .banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    opacity: .3;
+    z-index: 2;
+    transition: all .3s;
+  }
+  
+  .banner::after, .banner::before {
+    box-sizing: border-box;
+  }
+  
+  .banner img {
+    max-width:100%;
+    height: auto;
+  }
+  
+  .banner .banner:hover {
+    filter: none;
+    cursor: pointer;
+  }
+  
+  .banner .banner_img {
+    filter: blur(5px);
+    width: 110% !important;
+    max-width: 110%;
+    position: absolute;
+    top: -25%;
+    left: -5%;
+  }
+  
+  .serie-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    text-align: left;
+    position: relative;
+    top: -2.5em;
+    padding: 1em 0 0;
+  }
+  
+  .serie-header img {
+    max-width: 190px;
+    border: 1px solid #111;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .serie-header-data {
+    padding-left: 210px;
+  }
+  
+  .serie-header-data h1 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--main-green);
+    font-weight: 300;
+    margin: 0;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    border-bottom: 1px solid var(--main-green);
+    text-shadow: 1px 1px var(--color-text);
+  }
+  
+  .serie-description {
+    padding-top: .5em;
+    font-size: .85em;
+    color: var(--color-text);
+    margin: 0;
+  }
+  
+  .serie-header-metadata {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 1em;
+    font-size: .8em;
+    color: var(--color-text);
+  }
+  
+  .serie-header_genero{
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 1em .5em 0;
+    padding-left: 0;
+  }
+  
+  .serie-header_genero h3 {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 0 .5em 0 0;
+  }
+  
+  .serie-header_fecha {
+    margin-right: 1em;
+    margin-bottom: .5em;
+  }
+  
+  .serie-header_genero:first-child ul{
+    max-width: 425px;
+  }
+  
+  .serie-header_genero:first-child ul li {
+    border: 1px solid var(--main-green);
+    background: var(--main-green);
+    color: var(--color-text);
+    display: inline-block;
+    line-height: 1.6  solid var(--main-green);
+    margin: .5em;
+    padding: 0 .7em;
+  }
+  
+  .serie-header_rating{
+    display: inline-block;
+  }
+  
+  .star-rating {
+    font-size:13px;
+    width:100%;
+    display: inline-block;
+  }
+  
+  .star-rating span .fas {
+    color:var(--main-green);
+  }
+  
+  .star-rating span .far {
+    color:var(--main-green);
+  }
+  
+  .favorite{
+    display: inline-block;
+  }
+  
+  .favorite i{
+    color: #f63b3b;
+  }
+  
+  .state_sucess{
+    margin: 0 .5em; 
+    padding: 0 .7em;
+    background-color: rgba(53, 187, 55, 0.7);
+    text-align: center;
+    margin: 0;
+  }
+  
+  .state_danger{
+    margin: 0 .5em; 
+    padding: 0 .7em;
+    background-color: rgba(255, 112, 112, 0.555);
+    text-align: center;
+  }
+  
+  .state_warning{
+    margin: 0 .5em; 
+    padding: 0 .7em; 
+    background-color: rgba(255, 209, 83, 0.678);
+    text-align: center;
+  }
+  
+
+  .serie-header_genero .serie { 
+      margin: 0 .5em; 
+      padding: 0 .7em;
+      background-color: #35bb37;
+    }
+
+  .serie-header_genero .pelicula { 
+    margin: 0 .5em; 
+    padding: 0 .7em;
+    background-color: #357fbb;
+  }
+
+  .serie-header_genero .ova { 
+    margin: 0 .5em; 
+    padding: 0 .7em;
+    background-color: #eeae36;
+  }
+
+  .detail-page .toolbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+    
+  .detail-page .toolbar .tab {
+    display: block;
+    text-align: right;
+    overflow: hidden;
+    color: var(--main-green);
+    background-color: var(--opacity-grey);
+  }
+  
+  .detail-page .toolbar .tab .tablinks {
+    background-color: inherit;
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color: var(--color-text);
+    font-size: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .detail-page .toolbar .tab .tablinks:hover {
+    background-color: var(--opacity-green);
+    color: var(--color-text);
+  }
+  
+  .detail-page .toolbar .tab .tablinks *{
+    display: inline-block;
+  }
+  
+  .detail-page .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: 1px solid var(--main-green);
+    padding-left:15px;
+    padding-right: 15px;
+  }
+  
+  .seasions{
+    display: block;
+  }
+  
+  @media screen and (max-width: 800px) { 
+  
+    .detail-page {
+        height: 592px;
+    }
+    
+    .banner{
+        padding-bottom: 53%;
+    }
+  
+    .banner .banner_img{
+        top: 1%;
+    }
+    .serie-header{
+        top: -247px;
+        padding: 0px;
+    }
+    
+     .serie-header img,
+     .serie-header .serie-header-data {
+        display: block;
+        width: 100%;
+        padding: 0;
+        position: relative;
+        margin: auto;
+    }
+  
+    .serie-header .serie-header-data {
+        padding: 0px 5px;
+    }
+  
+    .serie-header-metadata .serie-header_fecha{
+        display: block;
+        margin-bottom: 0px;
+    }
+  
+    .serie-header-metadata  .serie-header_genero{
+        margin: 0;
+    }
+  
+    .serie-header-metadata  .serie-header_genero:first-child *{
+        display: inline-block;
+    }
+  
+    .serie-header-metadata .star-rating{
+        display: block;
+        width: 100%;
+    }
+  
+    .serie-header-metadata .star-rating *{
+        display: inline-block;
+    }
+  
+    .serie-header_rating{
+        width: auto;
+        text-align: center;
+    }
+  
+    .favorite{
+        text-align: center;
+    }
+  
+    .detail-page  .tab {
+        margin: 0px;
+    }
+  
+    .toolbar {
+        padding: 0;
+    }
+  
+    .toolbar .tab:first-child .tablinks i{
+        display: none;
+    }
+  
+    .listanime-page {
+      z-index: 0;
+    }
+  
+    .tabcontent{
+      overflow-x: auto;
+    }
+  
+  }

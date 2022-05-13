@@ -1,0 +1,311 @@
+:root {
+  --color-text: #000000;
+  --main-green: #23a7ff;
+  --main-grey: #ffffff;
+  --opacity-grey: #c2c2c2bd;
+  --opacity-green: #23a7ffb7;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--opacity-green);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-green);
+}
+
+main {
+  background-color: #d8d8d8;
+}
+
+.progress-container {
+  background: var(--opacity-grey);
+}
+
+.progress-bar {
+  background: var(--main-green);
+}
+
+.button_fixed {
+  border-color: var(--color-text);
+  color: white;
+  background: var(--main-green);
+}
+
+.alert {
+  color: white;
+}
+
+.mensajes .notification {
+  color: white;
+}
+
+.mensajes .delete:hover {
+  color: white;
+}
+
+.pre {
+  background-color: var(--opacity-grey);
+  color: var(--color-text);
+}
+
+.admin {
+  background: var(--main-grey);
+}
+
+.admin_element {
+  color: var(--main-green);
+  border: 1px solid var(--main-green);
+}
+
+.admin_element.active {
+  background-color: var(--main-green);
+  color: var(--color-text);
+}
+
+.toolbar .tab {
+  color: white;
+  background-color: var(--opacity-grey);
+}
+
+.toolbar .tab .tablinks {
+  color: white;
+}
+
+.toolbar .tab .tablinks:hover {
+  background-color: var(--opacity-grey);
+}
+
+/* .toolbar .tab .tablink.active, */
+.toolbar .tab .tablinks.active {
+  background: var(--main-green);
+  color: white;
+}
+
+.importador #myProgress {
+  background-color: var(--main-grey);
+}
+
+.importador .percent {
+  color: var(--color-text) !important;
+}
+
+.commingsoon {
+  color: var(--color-text);
+}
+
+.comments .info_avatar .info_usuario .estado .input_enviar {
+  border: 1px solid var(--main-green);
+  color: var(--color-text);
+}
+
+.comments .info_avatar .info_usuario .estado .btn_enviar {
+  border: 1px solid var(--main-green);
+  background-color: var(--main-green);
+  color: var(--color-text);
+}
+
+.comentario {
+  color: var(--color-text);
+}
+
+.tarjeta {
+  background: var(--main-grey);
+}
+
+.slider_banner .banner .anime .first .titulo {
+  -webkit-box-shadow: 0 -6px 16px 10px var(--opacity-grey);
+  -moz-box-shadow: 0 -6px 16px 10px var(--opacity-grey);
+  box-shadow: 0 -6px 16px 10px var(--opacity-grey);
+  background-color: var(--opacity-grey);
+  color: var(--color-text);
+}
+
+.slider_banner .flecha-banner {
+  color: var(--opacity-green);
+}
+
+.slider_banner .flecha-banner:hover {
+  color: var(--main-green);
+}
+
+.filters {
+  background: var(--main-grey);
+}
+
+.filters .link {
+  color: var(--color-text);
+}
+
+.filters .link:hover {
+  background: var(--opacity-green);
+}
+
+.error {
+  color: var(--main-green);
+}
+
+.error .text {
+  background-color: var(--opacity-green);
+  color: var(--main-grey);
+  border: 2px solid var(--main-grey);
+}
+
+.error .link {
+  background: var(--main-green);
+  border: 2px solid var(--color-text);
+  color: var(--color-text);
+}
+
+.error .link:hover {
+  border-color: var(--main-green);
+  background: var(--opacity-grey);
+  color: var(--color-text);
+}
+
+#endingrid .grid-item .fa-play-circle {
+  color: var(--opacity-green);
+}
+
+#endingrid .data {
+  background-color: var(--main-green);
+  color: var(--color-text);
+  -webkit-box-shadow: 0 -4px 6px 0 var(--opacity-green);
+  -moz-box-shadow: 0 -4px 6px 0 var(--opacity-green);
+  box-shadow: 0 -4px 6px 0 var(--opacity-green);
+}
+
+#endingrid .table {
+  background-color: var(--opacity-grey);
+  color: var(--color-text);
+}
+
+#endingrid .table.table-tbody .tbody-row:hover {
+  box-shadow: 0px 0px 10px var(--color-text);
+}
+
+#episodegrid .grid-item .fa-play-circle {
+  color: var(--opacity-green);
+}
+
+#episodegrid .data {
+  background-color: var(--main-green);
+  color: var(--color-text);
+  -webkit-box-shadow: 0 -4px 6px 0 var(--opacity-green);
+  -moz-box-shadow: 0 -4px 6px 0 var(--opacity-green);
+  box-shadow: 0 -4px 6px 0 var(--opacity-green);
+}
+
+#episodegrid .table {
+  background-color: var(--opacity-grey);
+  color: var(--color-text);
+}
+
+#episodegrid .table .table-tbody .tbody-row:hover {
+  box-shadow: 0px 0px 10px var(--color-text);
+}
+
+#openingrid .grid-item .fa-play-circle {
+  color: var(--opacity-green);
+}
+
+#openingrid .data {
+  background-color: var(--main-green);
+  color: var(--color-text);
+  -webkit-box-shadow: 0 -4px 6px 0 var(--opacity-green);
+  -moz-box-shadow: 0 -4px 6px 0 var(--opacity-green);
+  box-shadow: 0 -4px 6px 0 var(--opacity-green);
+}
+
+#openingrid .table {
+  background-color: var(--opacity-grey);
+  color: var(--color-text);
+}
+
+#openingrid .table.table-tbody .tbody-row:hover {
+  box-shadow: 0px 0px 10px var(--color-text);
+}
+
+.personage_list {
+  background-color: black;
+}
+
+.personage_list .info {
+  color: var(--opacity-green);
+}
+
+.table {
+  background-color: var(--opacity-grey);
+  color: var(--color-text);
+}
+
+.table .table-tbody .tbody-row:hover {
+  box-shadow: 0px 0px 10px var(--color-text);
+}
+
+.PersonageDetails .modal_container {
+  color: var(--color-text);
+}
+
+.PersonageDetails .modal_container .personage-modal.first .image {
+  border: 1px solid var(--main-green);
+}
+
+footer {
+  background: var(--main-grey);
+  border-top-color: var(--main-green);
+  color: var(--color-text);
+}
+
+footer .footer-list .element_container {
+  color: var(--color-text);
+  background: var(--main-green);
+}
+
+footer .footer-list .element_container .element_text {
+  background-color: var(--main-green);
+  color: var(--color-text);
+}
+
+footer .footer-logo .logo {
+  color: var(--color-text);
+}
+
+footer .footer-logo .contador li:hover {
+  background-color: transparent;
+}
+
+footer .footer-logo .contador li i {
+  color: var(--color-text);
+  background-color: linear-gradient(
+    to bottom,
+    #ffffff,
+    var(--main-green)
+  ) !important;
+}
+
+footer .footer-logo .sidenav .element * {
+  display: block;
+  color: var(--color-text);
+}
+
+.listanime-page {
+    color: var(--color-text);
+}
+
+.listanime-page .tab .tablinks {
+    background-color: var(--opacity-grey);
+    color: var(--main-green);
+}
+
+.listanime-page .tab .tablinks:hover {
+    background-color: var(--opacity-grey);
+    color: var(--main-green);
+}

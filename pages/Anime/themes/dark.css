@@ -1,0 +1,45 @@
+.toolbar .tab{
+    color: var(--main-green);
+}
+
+.toolbar .tab .tablinks{
+    color: var(--color-text);
+}
+
+.toolbar .tab .tablinks:hover {
+    color: var(--color-text);
+}
+
+.toolbar .tab .tablinks.active {
+    /* background: var(--main-green); */
+    color: var(--color-text);
+}
+
+
+.table{
+    background-color: var(--opacity-grey);
+    color: var(--color-text);
+  }
+  
+  .table .table-tbody .tbody-row:hover {
+    box-shadow: 0px 0px 10px var(--color-text);
+  }
+
+  .listanime-page {
+    color: var(--color-text);
+}
+
+.listanime-page .tab .tablinks {
+    /* background-color: var(--opacity-grey); */
+    color: var(--main-green);
+}
+
+.listanime-page .tab .tablinks:hover {
+    /* background-color: var(--opacity-grey); */
+    color: var(--main-green);
+}
+
+
+.seasions .title{
+    color: var(--color-text);
+}

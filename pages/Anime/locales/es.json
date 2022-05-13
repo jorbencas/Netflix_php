@@ -1,0 +1,12 @@
+{
+        "anime_detail_read" :"Leer",
+        "anime_detail_genere" : "Genero",
+        "anime_detail_state" : "Estado",
+        "anime_detail_kind" : "Tipo",
+        "anime_detail_list_episode" : "Episodios",
+        "anime_detail_list_character" : "Personages",
+        "anime_detail_list_openings" : "Openings",
+        "anime_detail_list_endings" : "Endings",
+        "anime_detail_temporada":"Temporada",
+        "anime_detail_seasion":"Temporadas"
+}

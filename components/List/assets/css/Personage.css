@@ -1,0 +1,16 @@
+
+.img{
+    background-color: black;
+    height: 95px;
+    width: 95px;
+    overflow: hidden;
+}
+
+.img:hover img{
+    opacity: 0.6;
+}
+
+ .img img{ 
+    height: 100%;
+    width: 100%;
+}

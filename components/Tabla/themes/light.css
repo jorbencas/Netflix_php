@@ -1,0 +1,8 @@
+#openingrid .table {
+  background-color: var(--opacity-grey);
+  color: var(--color-text);
+}
+
+#openingrid .table.table-tbody .tbody-row:hover {
+  box-shadow: 0px 0px 10px var(--color-text);
+}

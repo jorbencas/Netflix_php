@@ -1,0 +1,198 @@
+.chat{
+    position: fixed;
+    bottom: 27px;
+    right: 15px;
+    background-color: var(--opacity-grey);
+    width: 35%;
+    border: 1px solid var(--main-green);
+    padding: 5px;
+    max-width: 512px;
+    min-height: 65%;
+    max-height: 65%;
+}
+
+.chat .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2%;
+    background-color: var(--opacity-grey);
+    color: var(--color-text);
+    height: 50px;
+    overflow: hidden;
+}
+
+.info_avatar{
+    margin: 2px;
+}
+
+.info_avatar .avatar{
+    display: inline-block;
+    padding: 2px;
+    width: 44px;
+    height: 39px;
+}
+
+.info_avatar .avatar img{
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+}
+
+.info_avatar .info_usuario{
+    display: inline-block;
+}
+
+.info_avatar .info_usuario .nombre{
+    font-size: 24px;
+    display: block;
+    text-align:left;
+    margin: 0;
+}
+
+.info_avatar .info_usuario .estado{
+    font-size: 18px;
+    color: gray;
+    display: block;
+    text-align:left;
+    margin: 0;
+}
+
+.chat .toolbar:hover{
+    cursor: pointer;
+}
+
+.chat .toolbar .btn_close{
+    background-color: transparent;
+    width: 5px;
+}
+
+.chat .toolbar .btn_close *{
+    font-size: 20px;
+}
+
+.chat .lista_mensagues{
+    display: block;
+    background-color: var(--opacity-grey);
+    height: 95%;
+    width: 100%;
+    max-height: 70%;
+    box-sizing: border-box;
+    padding: 2%;
+    overflow-y: scroll;
+    overflow: hidden;
+}
+
+.chat .lista_mensagues .item{
+    width:100%;
+    display: block;
+    height: 40px;
+    position: relative;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.chat .lista_mensagues .item .mymessague,
+.chat .lista_mensagues .item .message{
+    color:var(--color-text);
+    padding: 5px;
+    vertical-align: middle;
+    width: 46%;
+    max-width: 98%;
+    border-radius: 15px;
+}
+
+.chat .lista_mensagues .item .mymessague{
+    background-color:var(--main-green);
+    float: right;
+    text-align: left;
+    margin-right: 1%;
+    padding-right: 10px;
+}
+
+.chat .lista_mensagues .item .message{
+    background-color:var(--opacity-green);
+    float: left;
+    text-align: left;
+    margin-left: 1%;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.chat .lista_mensagues .item .mymessague::after{
+    background-color:var(--main-green);
+    float: right;
+    content: "";
+    height: 14px;
+    width: 14px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 17px;
+    right: 3px;
+}
+
+.chat .lista_mensagues .item .message::before{
+    background-color:var(--opacity-green);
+    float: left;
+    content: "";
+    height: 14px;
+    width: 14px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 18px;
+    left: 3px;
+}
+
+.chat .box_text{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--opacity-grey);
+    height: 60px;
+    width: 100%;
+    max-height: 20%;
+    box-sizing: border-box;
+    padding: 2%;
+    position: relative;
+    bottom: 0;;
+}
+
+.chat .box_text .input_enviar{
+    border: 1px solid var(--main-green);
+    width: 85%;
+    max-width: 625px;
+    font-family: "Roboto";
+    font-size: 20px;
+    background-color: var(--main-grey);
+    color: var(--color-text);
+    outline: 0px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.chat .box_text .btn_enviar{
+    border: 1px solid var(--main-green);
+    background-color: var(--main-green);
+    color: var(--color-text);
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.chat .box_text .btn_enviar i{
+    font-size: 20px;
+}
+
+.user,
+.toolkid{
+    display: block;
+}
+
+.list_users{
+    display:none;
+    text-align: left;
+    color: var(--color-text);
+}

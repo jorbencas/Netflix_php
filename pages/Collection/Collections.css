@@ -1,0 +1,238 @@
+.collection{
+  width:90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+}
+
+.info{
+  margin:15px 0px;
+  width: 45%;
+  color: var(--color-text);
+}
+
+.info .name{
+  text-align: left;
+}
+
+.info .img {
+  width: 33%;
+  min-width: 190px;
+  height: 325px;
+  padding-top: 15px;
+}
+
+.info .num{
+  font-size: 22px;
+  padding: 5px;
+  text-align: left;
+}
+
+.info .line hr{
+  font-size: 19px;
+  background: var(--main-green);
+}
+
+.info .info_avatar{
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.info .info_avatar .avatar{
+  display: inline-block;
+  padding: 2px;
+  width: 44px;
+  height: 39px;
+  max-width: 765px;
+  vertical-align: bottom;
+}
+
+.info .info_avatar .avatar img{
+  border-radius: 50%;
+  width:100%;
+  height: 100%;
+}
+
+.info_avatar .info_usuario{
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: super;
+  margin-left: 15px;
+}
+
+.info .info_avatar .info_usuario .nombre{
+  font-size: 24px;
+  display: block;
+  text-align:left;
+}
+
+.info .info_avatar .info_usuario .estado{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.info .info_avatar .info_usuario .estado .input_enviar{
+  border: 1px solid var(--main-green);
+  width: 95%;
+  font-family: "Roboto";
+  font-size: 20px;
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 0px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.info .info_avatar .info_usuario .estado .btn_enviar{
+  border: 1px solid var(--main-green);
+  background-color: var(--main-green);
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 8px;
+}
+
+.info .info_avatar .info_usuario .estado .btn_enviar i{
+  font-size: 20px;
+}
+
+.collection .list{
+  width: 65%;
+}
+
+.collection .list .item{
+  display: block;
+  width: 100%;
+}
+
+.collection .list .toolbar{
+  display: block;
+  text-align: end;
+}
+
+.collection  .list .toolbar .tablinks {
+  background-color: var(--opacity-grey);
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--main-green);
+  font-size: 12px;
+}
+
+.collection  .list .toolbar .tablinks i {
+  padding: 14px 16px;
+}
+.collection  .list .toolbar .tablinks *{
+  font-size: 12px;
+}
+
+.collection  .list .toolbar .tablinks:hover {
+  background-color: var(--opacity-grey);
+  color: var(--main-green);
+}
+
+.collection  .list .toolbar .tablinks.active{
+  display:inline-block;
+  background: var(--main-green); 
+  color: var(--color-text);
+}
+
+
+
+.collection  .list .toolbar a[class*='active']{
+  display: none!important;
+}
+
+.collection  .list .toolbar a:not([class*='active']) {
+  display:inline-block;
+  background: var(--main-green); 
+  color: var(--color-text);
+}
+
+.collection .list .lista {
+  border: 1px solid var(--main-grey);
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 14px;
+   display: flex;
+   justify-content: space-between;
+   background: var(--main-grey);
+   color: var(--color-text);
+   align-items: center;
+}
+
+.collection  .list .lista .texto_line{
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   width:100%;
+   padding-right: 7px;
+   height: 80px;
+   max-height: 350px;
+   color: var(--color-text);
+   text-decoration: none;
+}
+
+.collection  .list .lista:hover .texto_line:hover,
+.collection  .list .lista:hover .texto_line:hover .img{
+   background-color: var(--main-green);
+   -webkit-box-shadow:  inset -147px -5px 52px -82px   var(--main-green);
+   -moz-box-shadow:  inset -147px -5px 52px -82px   var(--main-green);
+   box-shadow:  inset -147px -5px 52px -82px   var(--main-green);
+}
+
+.collection  .list  .lista .texto_line .img{
+   display: inline-block;
+   width: 33%;
+   min-width: 90px;
+   height: 80px;
+   -webkit-box-shadow: inset -147px -5px 52px -82px   var(--main-grey);
+   -moz-box-shadow: inset -147px -5px 52px -82px   var(--main-grey);
+   box-shadow: inset -147px -5px 52px -82px   var(--main-grey);
+}
+
+.collection  .list .lista .texto_line .texto {
+   display: inline-block;
+   max-width: 65%;
+   font-size: 16px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .collection{
+      width:90%;
+      margin: auto;
+      display: block;
+      align-items: top;
+  }
+
+  .info{
+      width: 100%;
+      text-align: center;
+  }
+  
+  .info .img {
+      margin:auto;
+      min-width: 190px;
+      height: 325px;
+      padding-top: 15px;
+      box-sizing: border-box;
+  }
+
+ .collection  .list{
+      width: 100%;
+  }
+
+ .collection  .list .lista .texto_line .texto {
+      max-width: 65%;
+      font-size: 16px;
+  }
+}

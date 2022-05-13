@@ -1,0 +1,25 @@
+.pre {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    height: 2%;
+    width: 100%;
+    transition: height 0.4s;
+    z-index: 2;
+  }
+  
+  .pre:hover {
+    height: 25%;
+    overflow: auto;
+    padding: 2%;
+  }
+  
+  .pre .state {
+    text-align: left;
+    font-size: 14px;
+    padding: 0;
+  }
+  
+  .pre .state * {
+    text-align: left;
+  }
