@@ -9,10 +9,6 @@ media
 logs
 cache
 # backup
-node/node_modules
-node/.env
-node/package-lock.json
-
 
 *.zip
 *.rar

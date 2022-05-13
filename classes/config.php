@@ -5,8 +5,6 @@ class Config
     private $urlApi;
     private $restrictedModules;
     private $apiToken;
-    private $urlNode;
-
     private $validModules;
     private $nomediaImg;
     private $defaultLang;
@@ -29,17 +27,10 @@ class Config
         $this->domain = isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : $cnfg['domain'];
         $this->defaultLang = $cnfg['defaultLang'];
         $this->urlApi = "http://{$cnfg['urlApi']}?r=";
-        $this->urlNode = $cnfg['urlNode'];
-
         $this->apiToken = $cnfg['apiToken'];
         $this->nomediaImg = $cnfg['nomediaImg'];
         $this->defaultPage = $cnfg['defaultPage'];
         $this->ajaxModules = array('Modals', 'Grid', 'List', 'Tabla');
-    }
-
-    public function getUrlNode()
-    {
-        return $this->urlNode;
     }
 
     public function getApiToken()

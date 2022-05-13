@@ -219,8 +219,7 @@ class Utils extends Config
             if (in_array($urlang, $this->getValidModules()) && isset($getpath[1])) {
                 $urlang = $getpath[1];
             }
-            //$data = $this->apiReq("Langs", array("action" => 'getcodelangs'));
-            $data = $this->apiReqNode("langs/getcodelangs");
+            $data = $this->apiReq("Langs", array("action" => 'getcodelangs'));
             if ($data['status']['code'] == 200) {
                 $valids = array();
                 foreach ($data['data'] as $l) {
@@ -230,12 +229,12 @@ class Utils extends Config
                     array_push($valids, $l['code']);
                 }
             } else {
-                // $valids = array("es", "en", "va", "ca");
-                // foreach ($valids as $key => $l) {
-                //     if ($urlang == ($key + 1)) {
-                //         $this->setLang(($l));
-                //     }
-                // }
+                $valids = array("es", "en", "va", "ca");
+                foreach ($valids as $key => $l) {
+                    if ($urlang == ($key + 1)) {
+                        $this->setLang(($l));
+                    }
+                }
             }
             if (in_array($urlang, $valids)) {
                 $lang = $urlang;
@@ -299,11 +298,6 @@ class Utils extends Config
         $date = new DateTime();
         $peticion .= "&rand={$date->getTimestamp()}";
         return $this->curl("{$this->getUrlApi()}{$this->getLang()}&am=$peticion", $params);
-    }
-
-    public function apiReqNode($peticion, $params = null)
-    {
-        return $this->curl($this->getUrlNode() . $peticion, $params);
     }
 
     private function curl($url, $params)
