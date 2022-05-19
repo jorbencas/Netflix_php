@@ -22,7 +22,7 @@ function User_run($web, $params) {
             <input type='text' name='username' id='usuario' value='jorge' placeholder='Usuario' required
                 pattern='[A-Za-z0-9]{4,12}' title='Usuario debe tener de 4 a 20 caracteres'>
             <div class='concret'>
-                <input type='password' name='passwd' id='passwd' value='Karanlik123?' placeholder='Contraseña'
+                <input type='password' name='passwd' id='passwd' value='fufufuf' placeholder='Contraseña'
                     autocomplate required>
                 <i class='far fa-eye' onclick='togglepassword()' style='display:none;'></i>
                 <i class='fas fa-eye-slash' onclick='togglepassword()'></i>
