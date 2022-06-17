@@ -64,9 +64,9 @@
                 $array = array();
                 array_push($array,$v['generes']);
                 if (is_array($v['generes']) && in_array($genere['filter'], $array[0] )) {
-                    $v['generes_list'] .= "<input  onchange='inputchanges(event.target)' type='checkbox' id='{$genere['filter']}' name='generes' checked value='{$genere['filter']}'>";
+                    $v['generes_list'] .= "<input  onchange='inputchanges(event.target)' type='checkbox' id='{$genere['filter']}' name='generes[]' checked value='{$genere['filter']}'>";
                 } else {
-                    $v['generes_list'] .= "<input  onchange='inputchanges(event.target)' type='checkbox' id='{$genere['filter']}' name='generes' value='{$genere['filter']}'>";
+                    $v['generes_list'] .= "<input  onchange='inputchanges(event.target)' type='checkbox' id='{$genere['filter']}' name='generes[]' value='{$genere['filter']}'>";
                 }
                 $v['generes_list'] .= "<label for='{$genere['filter']}' >{$genere['title']}</label>";
             }
@@ -77,9 +77,9 @@
                 $array = array();
                 array_push($array,$v['temporada']);
                 if (is_array($v['temporada']) && in_array($genere, $array[0] )) {
-                    $v['temporada_list'] .= "<input  onchange='inputchanges(event.target)' type='checkbox' id='{$genere['filter']}' name='temporada' checked value='{$genere['filter']}'>";
+                    $v['temporada_list'] .= "<input  onchange='inputchanges(event.target)' type='checkbox' id='{$genere['filter']}' name='temporada[]' checked value='{$genere['filter']}'>";
                 } else {
-                    $v['temporada_list'] .= "<input  onchange='inputchanges(event.target)' type='checkbox' id='{$genere['filter']}' name='temporada' value='{$genere['filter']}'>";
+                    $v['temporada_list'] .= "<input  onchange='inputchanges(event.target)' type='checkbox' id='{$genere['filter']}' name='temporada[]' value='{$genere['filter']}'>";
                 }
                 $v['temporada_list'] .= "<label for='{$genere['filter']}' >{$genere['title']}</label>";
             }
