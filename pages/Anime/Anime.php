@@ -1,4 +1,4 @@
-<?php 
+    <?php 
     function Anime_run($web, $params) {
         $GET = $web->getGET();
         if (isset($GET['id'])) {
@@ -134,7 +134,11 @@
             if ($data['status']['code'] == 200) {
                 $num_animes = $data['data'];
                 $maxlimit = 25;
-                $actual_page = isset($GET['p']) ? $GET['p']: 1;
+                setcookie('lastpage', ($num_animes / $maxlimit));
+                $actual_page = isset($_GET['p']) ? $_GET['p'] : 1;
+                if((int)$_COOKIE['lastpage'] < $actual_page){
+                    $actual_page = 1;
+                }
                 $first = $actual_page > 1 ? ($actual_page - 1) * $maxlimit : 0;
                 $last = ($num_animes - ($first + $maxlimit)) < $maxlimit ? $num_animes : ($first + $maxlimit);
                 $f = $num_animes == 1 ? 0 : $first;
@@ -161,7 +165,7 @@
                         if ($maxlimit < $num_animes) {
                             if ($actual_page == 1) {
                                 $v['next_page'] = $actual_page + 1;
-                                $result = $num_animes / $maxlimit;
+                                $result = (int)$_COOKIE['lastpage'];
                                 //cuando se quiera redondear un float se debe pasar a string y luego ha float 
                                 if (is_float($result)) {
                                     $res = explode(".",$result);
