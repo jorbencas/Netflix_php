@@ -134,9 +134,9 @@
             if ($data['status']['code'] == 200) {
                 $num_animes = $data['data'];
                 $maxlimit = 25;
-                setcookie('lastpage', ($num_animes / $maxlimit));
+                $_SESSION['lastpage'] = ($numSosis / $maxlimit);
                 $actual_page = isset($_GET['p']) ? $_GET['p'] : 1;
-                if((int)$_COOKIE['lastpage'] < $actual_page){
+                if((int)$_SESSION['lastpage'] < $actual_page){
                     $actual_page = 1;
                 }
                 $first = $actual_page > 1 ? ($actual_page - 1) * $maxlimit : 0;
@@ -165,7 +165,7 @@
                         if ($maxlimit < $num_animes) {
                             if ($actual_page == 1) {
                                 $v['next_page'] = $actual_page + 1;
-                                $result = (int)$_COOKIE['lastpage'];
+                                $result = (int)$_SESSION['lastpage'];
                                 //cuando se quiera redondear un float se debe pasar a string y luego ha float 
                                 if (is_float($result)) {
                                     $res = explode(".",$result);
