@@ -41,3 +41,15 @@
         //$web->redirect("Errors");
     }
 ?>
+
+
+
+
+<?php
+	$valida_ct = $_POST["contraseña"];
+	if (preg_match("/^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).*$/", $valida_ct)) {
+		echo '<p style="color:green">Contraseña segura</p>'; 
+	}else{
+		echo '<p style="color:red">La contraseña debe incluir mayúsculas, minúsculas, números, signos y más de seis caracteres</p>'; 
+	}
+?>
