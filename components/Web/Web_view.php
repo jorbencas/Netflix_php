@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html theme="<?= $v["web"]->getTheme();?>" lang="<?= $v["web"]->getLang()?>">
   <head>
-    <base href="http://<?= $v['web']->getDomain()?>/"/>
+    <base href="<?= constant('URL_BASE') ?>"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="<?= $v["web"]->handleMedia("img","no","jpg") ?>" />

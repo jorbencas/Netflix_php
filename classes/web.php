@@ -362,9 +362,9 @@
             // $ruta = $link;
             // }
             if ($withparams) {
-                return "http://{$this->getDomain()}?r={$this->getLang()}/$ruta";
+                return constant('URL_BASE') . "?r={$this->getLang()}/$ruta";
             } else {
-                return "http://{$this->getDomain()}$ruta";
+                return constant('URL_BASE') . $ruta;
             }
         }
     }

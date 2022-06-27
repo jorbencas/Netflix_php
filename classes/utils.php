@@ -276,7 +276,7 @@ class Utils extends Config
         }
 
         if ($this->isAjax()) {
-            $mediapath = "http://{$this->getDomain()}/$mediapath";
+            $mediapath = constant('URL_BASE') . $mediapath;
         }
 
         return $mediapath;
