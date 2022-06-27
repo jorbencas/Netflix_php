@@ -31,6 +31,7 @@ class Config
         $this->nomediaImg = $cnfg['nomediaImg'];
         $this->defaultPage = $cnfg['defaultPage'];
         $this->ajaxModules = array('Modals', 'Grid', 'List', 'Tabla');
+        define("URL_BASE", "http://{$this->getDomain()}");
     }
 
     public function getApiToken()
